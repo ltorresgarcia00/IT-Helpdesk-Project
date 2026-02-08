@@ -1,59 +1,80 @@
-# IT HelpDesk Lab
-## 🖥️ Windows 11 Help Desk Lab (UTM Virtualization)
+# IT Help Desk Ticketing Lab
+## 🎫 osTicket Help Desk System (Ubuntu on UTM)
+
+---
 
 ### 📌 Overview
-This project simulates a real-world IT Help Desk environment using **Windows 11 ARM** running in **UTM (QEMU)** on an Apple Silicon Mac. The lab focuses on core IT support responsibilities such as OS installation, administrator account management, user provisioning, and system configuration.
+This project simulates a real-world **IT Help Desk ticketing system** using **osTicket** deployed on **Ubuntu Linux** running in **UTM (QEMU)** on an Apple Silicon Mac.
 
-The goal of this project is to demonstrate hands-on experience with:
-- Windows administration
-- Local user and permission management
-- Virtual machine setup and optimization
-- Help Desk–style troubleshooting workflows
+The lab focuses on hands-on experience with:
+- Help desk ticket workflows
+- Linux-based system administration
+- Web application deployment
+- Tier 1 / Tier 2 IT support processes
+
+This project demonstrates how support teams receive, triage, escalate, and resolve technical issues using a centralized ticketing platform.
 
 ---
 
 ### 🛠️ Environment
 - **Host OS:** macOS (Apple Silicon – M3)
 - **Virtualization:** UTM (QEMU ARM64)
-- **Guest OS:** Windows 11 ARM (25H2)
-- **Guest Tools:** UTM Guest Tools (installed)
-- **Memory:** 4 GB RAM
-- **CPU:** 4 cores
-- **Disk:** 64 GB virtual disk
+- **Guest OS:** Ubuntu Linux
+- **Web Stack:** Apache, PHP, MariaDB (LAMP)
+- **Ticketing System:** osTicket (latest version)
+- **Memory:** 6 GB RAM
+- **Disk:** ~20 GB virtual disk
+- **Network:** Shared (NAT)
 
 ---
 
-### 👤 Accounts Configured
-| Account Name     | Type           | Purpose |
-|------------------|----------------|---------|
-| `helpdesk_user`  | Administrator  | IT Help Desk / Admin account |
-| `employee1`      | Standard User  | Simulated end-user |
+### 🎫 Ticketing System Configuration
+- Configured **departments** (IT Support, Security)
+- Defined **roles** and **agent permissions**
+- Implemented **ticket priorities** and **SLAs**
+- Customized **email templates** and responses
+- Simulated real-world support workflows
+
+---
+
+### 🧪 Example Tickets Handled
+- Password reset and account lockout
+- MFA and login access issues
+- Network connectivity and DNS problems
+- Slow system performance
+- Security-related incident escalation
+
+Each ticket includes:
+- Issue description
+- Troubleshooting steps
+- Resolution notes
+- Closure documentation
 
 ---
 
 ### 🔑 Skills Demonstrated
-- Windows OS installation & configuration
-- Local account creation and role assignment
-- Administrator vs Standard User permissions
-- Virtual machine resource tuning
-- Guest tools installation and verification
-- Entry-level Help Desk troubleshooting
+- Linux system administration
+- LAMP stack installation and configuration
+- Help desk ticket lifecycle management
+- Technical documentation and escalation
+- Realistic Tier 1 / Tier 2 IT support workflows
+- Troubleshooting across OS, network, and access layers
 
 ---
 
 ### 📸 Screenshots Included
-- Windows 11 installation process
-- Administrator account verification
-- User account management
-- UTM Guest Tools installation
-- VM configuration overview
+- Ubuntu system overview
+- osTicket installation and setup
+- Admin dashboard and configuration
+- Sample tickets (open, in-progress, resolved)
+- SLA and department configuration
 
 ---
 
 ### 🎯 Why This Matters
-This lab mirrors tasks performed in entry-level IT roles such as:
+This lab mirrors tools and workflows used in entry-level IT roles such as:
 - Help Desk Technician
 - IT Support Specialist
-- Desktop Support Analyst
+- Service Desk Analyst
 
-It demonstrates practical Windows administration skills beyond theory.
+It demonstrates practical experience with ticket-based support systems and Linux-hosted IT infrastructure.
