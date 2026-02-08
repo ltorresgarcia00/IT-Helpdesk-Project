@@ -1,1 +1,67 @@
+### Ticket ID: HD-001
+**User:** employee1  
+**Issue:** Unable to install application  
+**Priority:** Medium
+
+#### Description
+User reports an error stating “Administrator privileges required” when attempting to install software.
+
+#### Resolution
+1. Logged in as `helpdesk_user` (Administrator).
+2. Verified user account permissions.
+3. Confirmed `employee1` is a Standard User.
+4. Installed software on behalf of user.
+
+#### Outcome
+Issue resolved. User educated on permission limitations.
+
+
+### Ticket ID: HD-002
+**User:** New Hire  
+**Issue:** Account creation  
+**Priority:** High
+
+#### Description
+HR requests a new local user account for a new employee.
+
+#### Resolution
+1. Created new local account.
+2. Assigned Standard User permissions.
+3. Verified login functionality.
+
+#### Outcome
+Account created successfully.
+
+
+### Ticket ID: HD-003
+**User:** helpdesk_user  
+**Issue:** Confirm admin privileges  
+**Priority:** Low
+
+#### Description
+Verification requested to ensure Help Desk account has administrator rights.
+
+#### Resolution
+1. Navigated to Settings → Accounts → Your Info.
+2. Confirmed Administrator role.
+
+#### Outcome
+Admin access confirmed.
+
+
+### Ticket ID: HD-004
+**User:** helpdesk_user  
+**Issue:** VM running hot / slow  
+**Priority:** Medium
+
+#### Description
+MacBook overheating during VM usage.
+
+#### Resolution
+1. Reduced VM memory to 4 GB.
+2. Limited CPU cores to 4.
+3. Disabled unnecessary background apps.
+
+#### Outcome
+System temperature stabilized.
 
