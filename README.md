@@ -71,6 +71,14 @@ Each ticket includes:
 
 ---
 
+
+## Ubuntu Initial Setup
+
+Updated the system packages to ensure the VM was fully patched before installing services.
+
+```bash
+sudo apt update && sudo apt upgrade -y
+
 ### 🎯 Why This Matters
 This lab mirrors tools and workflows used in entry-level IT roles such as:
 - Help Desk Technician
