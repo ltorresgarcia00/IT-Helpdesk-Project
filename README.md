@@ -76,5 +76,6 @@ This lab mirrors tools and workflows used in entry-level IT roles such as:
 - Help Desk Technician
 - IT Support Specialist
 - Service Desk Analyst
+- IT Support Engineer
 
 It demonstrates practical experience with ticket-based support systems and Linux-hosted IT infrastructure.
