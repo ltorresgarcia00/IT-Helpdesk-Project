@@ -8,3 +8,7 @@ Updated the system packages to ensure the VM was fully patched before installing
 sudo apt update && sudo apt upgrade -y
 
 Ubuntu-update.png
+
+## Ubuntu Apache installed
+
+screenshot: apache-runnng.png
