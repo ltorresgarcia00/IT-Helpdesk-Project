@@ -1,81 +1,199 @@
-# IT Help Desk Ticketing Project
-## 🎫 osTicket Help Desk System (Ubuntu on UTM)
+# IT Help Desk & Active Directory Project
+## 🎫 osTicket + Active Directory (Hybrid IT Support Lab)
 
 ---
 
-### 📌 Overview
-This project simulates a real-world **IT Help Desk ticketing system** using **osTicket** deployed on **Ubuntu Linux** running in **UTM (QEMU)** on an Apple Silicon Mac.
+## 📌 Overview
 
-The lab focuses on hands-on experience with:
-- Help desk ticket workflows
-- Linux-based system administration
-- Web application deployment
-- Tier 1 / Tier 2 IT support processes
+This project simulates a real-world **enterprise IT Help Desk environment** using:
 
-This project demonstrates how support teams receive, triage, escalate, and resolve technical issues using a centralized ticketing platform.
+- **osTicket (Ubuntu Linux)**
+- **Windows Server Active Directory**
+- **Windows 11 Domain-Joined Client**
+- **UTM Virtualization (Apple Silicon)**
 
----
+The lab demonstrates how IT support teams receive, triage, escalate, and resolve technical issues involving:
 
-### 🛠️ Environment
-- **Host OS:** macOS (Apple Silicon – M3)
-- **Virtualization:** UTM (QEMU ARM64)
-- **Guest OS:** Ubuntu Linux
-- **Web Stack:** Apache, PHP, MariaDB (LAMP)
-- **Ticketing System:** osTicket (latest version)
-- **Memory:** 6 GB RAM
-- **Disk:** ~20 GB virtual disk
-- **Network:** Shared (NAT)
+- Active Directory user management
+- Account lockouts and password resets
+- Group-based access control
+- Cloud identity troubleshooting
+- Endpoint and network issues
+
+This mirrors real Tier 1 / Tier 2 support workflows used in corporate environments.
 
 ---
 
-### 🎫 Ticketing System Configuration
-- Configured **departments** (IT Support, Security)
-- Defined **roles** and **agent permissions**
-- Implemented **ticket priorities** and **SLAs**
-- Customized **email templates** and responses
-- Simulated real-world support workflows
+## 🛠️ Environment
+
+### 💻 Host System
+- macOS (Apple Silicon – M3)
+- UTM (QEMU ARM64 virtualization)
+
+### 🖥 Virtual Machines
+
+**1️⃣ Windows Server (Domain Controller)**
+- Active Directory Domain Services (AD DS)
+- DNS Server
+- Group Policy Management
+
+**2️⃣ Windows 11 Client**
+- Domain-joined device
+- Simulated end-user workstation
+
+**3️⃣ Ubuntu Linux Server**
+- Apache Web Server
+- PHP
+- MariaDB
+- osTicket (latest version)
+
+### ⚙️ Resource Allocation
+- Windows Server: 4–6 GB RAM
+- Windows Client: 4 GB RAM
+- Ubuntu: 4–6 GB RAM
+- Disk: ~20–60 GB per VM
+- Network: NAT (internal lab network)
 
 ---
 
-### 🧪 Example Tickets Handled
-- Password reset and account lockout
-- MFA and login access issues
-- Network connectivity and DNS problems
+## 🧠 Active Directory Configuration
+
+- Installed and configured **Active Directory Domain Services**
+- Created:
+  - Users
+  - Security Groups
+  - Organizational Units (OUs)
+- Configured **Group Policy Objects (GPOs)**
+- Simulated:
+  - Account lockouts
+  - Password resets
+  - Group membership changes
+  - Domain join troubleshooting
+  - RDP access permissions
+- Practiced **least privilege and RBAC principles**
+
+---
+
+## 🎫 Ticketing System (osTicket)
+
+Deployed osTicket to simulate structured IT support workflows.
+
+### Configurations
+- Created departments (IT Support, Security)
+- Defined agent roles and permissions
+- Configured ticket priorities and SLAs
+- Customized email templates and auto-responses
+- Implemented escalation workflows
+
+---
+
+## 🧪 Example Tickets Handled
+
+### 🔐 Active Directory Issues
+- User account locked out
+- Password reset requests
+- Group access provisioning
+- OU reassignment
+- GPO-related login issues
+
+### ☁️ Identity & Access Issues
+- MFA login failures
+- Cloud identity access troubleshooting
+- Role-based access control adjustments
+
+### 🌐 Network & System Issues
+- DNS resolution failures
 - Slow system performance
-- Security-related incident escalation
+- Application crashes
+- Network connectivity issues
 
-Each ticket includes:
-- Issue description
-- Troubleshooting steps
-- Resolution notes
-- Closure documentation
+### 🛡 Security-Related Tickets
+- Suspicious login attempt
+- Account compromise investigation
+- Privilege escalation request review
 
----
-
-### 🔑 Skills Demonstrated
-- Linux system administration
-- LAMP stack installation and configuration
-- Help desk ticket lifecycle management
-- Technical documentation and escalation
-- Realistic Tier 1 / Tier 2 IT support workflows
-- Troubleshooting across OS, network, and access layers
+Each ticket included:
+- Detailed issue description
+- Step-by-step troubleshooting
+- Resolution documentation
+- Escalation notes (if applicable)
+- Closure summary
 
 ---
 
-### 📸 Screenshots Included
+## 🔑 Skills Demonstrated
+
+### 🖥 Systems Administration
+- Windows Server configuration
+- Active Directory management
+- GPO implementation
+- Linux server administration
+
+### 🎫 Help Desk Operations
+- Ticket lifecycle management
+- SLA awareness
+- Tier 1 / Tier 2 escalation processes
+- Technical documentation best practices
+
+### 🔐 Identity & Access Management
+- User provisioning and deprovisioning
+- Group-based access control
+- Account lifecycle management
+- Authentication troubleshooting
+
+### 🌐 Networking
+- DNS troubleshooting
+- Domain authentication flow
+- RDP and remote access configuration
+
+### 🛡 Security Concepts
+- Least privilege
+- Role-based access control (RBAC)
+- Account lockout policies
+- Basic incident triage
+
+---
+
+## 📸 Screenshots Included
+
+- Windows Server AD configuration
+- Users & Groups management
+- Group Policy setup
+- Domain-joined Windows 11 system
 - Ubuntu system overview
-- osTicket installation and setup
-- Admin dashboard and configuration
-- Sample tickets (open, in-progress, resolved)
+- osTicket dashboard
+- Sample open/in-progress/resolved tickets
 - SLA and department configuration
 
 ---
 
-### 🎯 Why This Matters
-This lab mirrors tools and workflows used in entry-level IT roles such as:
+## 🎯 Career Relevance
+
+This lab mirrors real-world workflows used in roles such as:
+
 - Help Desk Technician
 - IT Support Specialist
 - Service Desk Analyst
-- IT Support Engineer
+- Desktop Support Technician
+- Junior Systems Administrator
+- SOC Analyst (entry-level)
 
-It demonstrates practical experience with ticket-based support systems and Linux-hosted IT infrastructure.
+It demonstrates hands-on experience across:
+
+- Active Directory environments
+- Ticket-based IT operations
+- Hybrid infrastructure troubleshooting
+- Identity and access management
+
+---
+
+## 🚀 Key Takeaway
+
+This project bridges:
+
+Active Directory Administration  
++ Help Desk Operations  
++ Linux Server Deployment  
++ Security Fundamentals  
+
+Providing practical experience aligned with modern IT support and early-career cybersecurity roles.
