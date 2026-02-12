@@ -1,4 +1,4 @@
-# IT Help Desk & Active Directory Project
+# IT Help Desk & Active Directory Project (In Progress)
 ## 🎫 osTicket + Active Directory (Hybrid IT Support Lab)
 
 ---
