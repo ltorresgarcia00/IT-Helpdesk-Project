@@ -4,7 +4,7 @@
 ---
 
 🎥 Project Walkthrough (3-Minute Demo)
-[Watch Here] (Comming Soon)
+[Watch Here] (Coming Soon)
 
 
 ## 📌 Overview
